@@ -1,4 +1,17 @@
 module.exports = {
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'lwenjim',
+          name: 'testelectron'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ],  
   packagerConfig: {
     asar: true,
   },
